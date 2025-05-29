@@ -81,10 +81,10 @@ for i, text in enumerate(results):
 Loops through the generated results and prints each paragraph with a label.
 
 # Dependencies
---- 
+--
 transformers
 torch
----
+--
 List these in a requirements.txt file:
 
 transformers
