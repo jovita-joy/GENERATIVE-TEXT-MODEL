@@ -93,3 +93,4 @@ transformers
 torch
 
 OUTPUT
+![Image](https://github.com/user-attachments/assets/6d94bcf2-6200-497d-bfce-bddbb1b49311)
