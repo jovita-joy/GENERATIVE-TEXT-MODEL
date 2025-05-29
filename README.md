@@ -4,7 +4,7 @@
  
 This project uses the GPT-2 language model from Hugging Face Transformers to generate coherent paragraphs based on user prompts. You can customize the prompt, output length, temperature, and number of generated texts.
 
- Features
+# Features
  
 Uses pre-trained GPT-2 for fast and fluent text generation.
 
@@ -14,7 +14,7 @@ Configurable max_length, temperature, and num_return_sequences.
 
 Easily extendable to web apps or fine-tuned models.
 
-Code Explanation
+# Code Explanation
 
 from transformers import pipeline, set_seed
 
@@ -65,7 +65,7 @@ pad_token_id=50256: The end-of-text token used by GPT-2, to avoid warning messag
 
 The function returns a list of generated text strings.
 
-Example Prompt and Output
+# Example Prompt and Output
 
 prompt = "The impact of climate change on future generations"
 
@@ -80,12 +80,11 @@ for i, text in enumerate(results):
 
 Loops through the generated results and prints each paragraph with a label.
 
-Dependencies
-
+# Dependencies
+--- 
 transformers
-
 torch
-
+---
 List these in a requirements.txt file:
 
 transformers
