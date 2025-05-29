@@ -82,10 +82,10 @@ Loops through the generated results and prints each paragraph with a label.
 
 # Dependencies
 
-bash
 transformers
+
 torch
----
+
 List these in a requirements.txt file:
 
 transformers
