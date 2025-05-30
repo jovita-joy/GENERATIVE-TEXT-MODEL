@@ -55,7 +55,7 @@ def generate_paragraph(prompt, max_length=150, temperature=1.0, num_return_seque
         pad_token_id=50256  
     )
     return [o['generated_text'] for o in output]
-    ```
+ ```
 
 prompt: The initial text or topic you want GPT-2 to expand upon.
 
