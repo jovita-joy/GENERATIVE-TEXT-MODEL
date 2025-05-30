@@ -11,7 +11,7 @@
 
 "MENTOR":Neela Santhosh
 
- GPT-2 Text Generation with Hugging Face
+ # GPT-2 Text Generation with Hugging Face
  
 This project uses the GPT-2 language model from Hugging Face Transformers to generate coherent paragraphs based on user prompts. You can customize the prompt, output length, temperature, and number of generated texts.
 
@@ -106,10 +106,9 @@ transformers
 torch
 
 List these in a requirements.txt file:
-
+```sh
 transformers
-
 torch
-
+```
 OUTPUT
 ![Image](https://github.com/user-attachments/assets/6d94bcf2-6200-497d-bfce-bddbb1b49311)
