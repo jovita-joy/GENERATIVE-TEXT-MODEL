@@ -16,17 +16,23 @@ Easily extendable to web apps or fine-tuned models.
 
 # Code Explanation
 
+```sh
 from transformers import pipeline, set_seed
+```
 
 pipeline: A high-level Hugging Face function that sets up a text generation model (like GPT-2) with a single line.
 
 set_seed: Used to set a random seed so that the output is reproducible.
 
+```sh
 generator = pipeline('text-generation', model='gpt2')
+```
 
 This line loads the GPT-2 model and its tokenizer for text generation.
 
+```sh
 pipeline('text-generation') internally loads the default model (gpt2) unless otherwise specified.
+```
 
 It will download the model on first run and cache it locally.
 
@@ -36,6 +42,7 @@ Ensures that every time you run the script, you get the same output (useful for 
 
 Function to Generate Text
 
+```sh
 def generate_paragraph(prompt, max_length=150, temperature=1.0, num_return_sequences=1):
     """
     Generate coherent paragraph using GPT-2.
@@ -48,7 +55,8 @@ def generate_paragraph(prompt, max_length=150, temperature=1.0, num_return_seque
         pad_token_id=50256  
     )
     return [o['generated_text'] for o in output]
-    
+    ```
+
 prompt: The initial text or topic you want GPT-2 to expand upon.
 
 max_length: Total number of tokens (words + punctuation) in the output.
